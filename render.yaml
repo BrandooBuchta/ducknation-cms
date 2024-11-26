@@ -3,7 +3,7 @@ services:
     type: web
     env: static
     buildCommand: ""
-    startCommand: "./pocketbase serve --http=0.0.0.0:10000"
+    startCommand: "./pocketbase serve --http=0.0.0.0:$PORT"
     envVars:
       - key: PB_ENCRYPTION_KEY
         value: "your-encryption-key"
