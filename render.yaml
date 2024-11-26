@@ -4,7 +4,6 @@ services:
     env: linux
     buildCommand: ""
     startCommand: "./pocketbase serve --http=0.0.0.0:$PORT"
-    staticPublishPath: pb_public
     disk:
       name: pocketbase-data
       mountPath: /pb_data
