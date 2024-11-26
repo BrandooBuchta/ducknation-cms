@@ -1,7 +1,7 @@
 services:
   - name: pocketbase
     type: web
-    env: docker
+    env: linux
     buildCommand: ""
     startCommand: "./pocketbase serve --http=0.0.0.0:$PORT"
     disk:
