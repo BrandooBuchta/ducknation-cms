@@ -1,12 +1,9 @@
 services:
   - name: pocketbase
     type: web
-    env: static
+    env: linux
     buildCommand: ""
     startCommand: "./pocketbase serve --http=0.0.0.0:$PORT"
-    envVars:
-      - key: PB_ENCRYPTION_KEY
-        value: "your-encryption-key"
     staticPublishPath: pb_public
     disk:
       name: pocketbase-data
